@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		img{
+			position: absolute;
+			
+		}
+	</style>
+</head>
+
+<body onload="loadZila()">
+	<img id="zila" onclick="moveZila()">
+
+
+<script type="text/javascript">
+	function loadZila(){
+		const img=document.getElementById('zila')
+			img.src='img/logo.png'
+		const x=Math.random()*600;
+		const y=Math.random()*500;
+
+		img.style.left = x+'px';
+		img.style.top=y+'px';
+
+	
+		
+	}
+	function moveZila(){
+		alert('You Catch Me');
+		const move=document.getElementById('zila');
+		const x=Math.random()*600;
+		const y=Math.random()*500;
+
+		move.style.left = x+'px';
+		move.style.top=y+'px';
+
+
+	}
+
+</script>
+</body>
+</html>
